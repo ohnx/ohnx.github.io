@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <title>Mason Xiao</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Mason jjkbj">
+		<meta name="author" content="Mason Xiao">
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+        <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr.js"></script>
+        <style>
+        body {
+            margin: 1% 5% 0 5%;
+            overflow: hidden;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+        }
+        .left {
+            float: left;
+            margin: 0;
+            width: 400px;
+        }
+        .right {
+            float: right;
+            padding: 0;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            text-align: left;
+        }
+        .tright {
+            float: right;
+        }
+        .reveal-modal {
+            text-align: center;
+        }
+        h1, h2, h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        .contact {
+            font-size: 3em;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+    	<div class="container">
+			<div class="left">
+				<h1>Mason Xiao</h1>
+				<p>I'm a 14 year old kid who likes to code. <a href="#" data-reveal-id="aboutM">Learn more</a>.</p>
+				<h3>My projects</h3>
+				<p><a href="https://github.com/ohnx/libDraw">libDraw </a> <span class="tright">A drawing library for BareMetal-OS</span></p>
+				<p><a href="https://github.com/ohnx/easypage">easypage2</a> <span class="tright">A simple CMS</span></p>
+                <p><a href="https://portfolio.masonx.tk/?project=searchpage2">Search Page 2</a> <span class="tright">A custom home page creator</span></p>
+                <p><span class="tright"><a href="https://github.com/ohnx">More...</a></span></p><br />
+				<h3>Contact and connect with me</h3>
+				<p class="contact">
+				    <a href="mailto:me@masonx.tk?subject=Hello!"><i class="fa fa-envelope"></i></a>
+				    <a href="https://github.com/ohnx" target="tab"><i class="fa fa-github"></i></a>
+			</div>
+			<div class="right">
+				<img src="http://lorempixel.com/output/nature-q-c-800-800-8.jpg"></img>
+			</div>
+		</div> <!-- /container -->
+		<div id="aboutM" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">About me</h2>
+            <p class="lead">
+                I'm a 14 year old kid who loves to code, tinker with things, learn and teach.<br />
+			    I can code in multiple different languages including C, Microsoft Visual Basic, PHP (and some mySQL) and I am currently learning Lisp/Racket.<br />
+			    I like playing around with electronics and my Arduino.<br />
+			    I also enjoy reading, trying (and failing) to make music, drawing stuff, designing websites, and working on open-source projects.<br />
+			</p>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
