@@ -12,59 +12,98 @@
         <script src="js/vendor/modernizr.js"></script>
         <style>
         body {
-            margin: 1% 5% 0 5%;
             overflow: hidden;
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
-        }
+background: rgb(0,129,255); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(0,129,255,1) 0%, rgba(255,145,145,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,129,255,1)), color-stop(100%,rgba(255,145,145,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg, rgba(0,129,255,1) 0%,rgba(255,145,145,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg, rgba(0,129,255,1) 0%,rgba(255,145,145,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg, rgba(0,129,255,1) 0%,rgba(255,145,145,1) 100%); /* IE10+ */
+background: linear-gradient(45deg, rgba(0,129,255,1) 0%,rgba(255,145,145,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081ff', endColorstr='#ff9191',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+margin: 0;
+}
+.deadclass {
+background: rgb(255,145,145); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(255,145,145,1) 0%, rgba(251,254,180,1) 32%, rgba(2,252,180,1) 70%, rgba(0,129,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,145,145,1)), color-stop(32%,rgba(251,254,180,1)), color-stop(70%,rgba(2,252,180,1)), color-stop(100%,rgba(0,129,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg, rgba(255,145,145,1) 0%,rgba(251,254,180,1) 32%,rgba(2,252,180,1) 70%,rgba(0,129,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg, rgba(255,145,145,1) 0%,rgba(251,254,180,1) 32%,rgba(2,252,180,1) 70%,rgba(0,129,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg, rgba(255,145,145,1) 0%,rgba(251,254,180,1) 32%,rgba(2,252,180,1) 70%,rgba(0,129,255,1) 100%); /* IE10+ */
+background: linear-gradient(135deg, rgba(255,145,145,1) 0%,rgba(251,254,180,1) 32%,rgba(2,252,180,1) 70%,rgba(0,129,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9191', endColorstr='#0081ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	    font-size:1em;
+	margin:0;
+	}
+	a {
+color:#73FFA8;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+a:hover{
+color:#30FF7F;
+}
+	.container {
+	    margin: 2% auto;
+	    max-width: 600px;
+	}
         .left {
             float: left;
-            margin: 0;
-            width: 400px;
-        }
-        .right {
-            float: right;
-            padding: 0;
-            margin: 0;
         }
         p {
             margin: 0;
             text-align: left;
+		font-size:1.5em;
+		color:#FAFFDB;
         }
         .tright {
             float: right;
         }
         .reveal-modal {
             text-align: center;
+	    width:90vw;
         }
         h1, h2, h3 {
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
+	    color:#EDFF75;
         }
+	h1 {
+	    font-size: 5em;
+	}
         .contact {
-            font-size: 3em;
+            font-size: 5em;
             text-align: center;
         }
+	@media (max-width: 480px) {
+		body {
+			overflow:visible;
+		}
+	}
+
         </style>
     </head>
     <body>
     	<div class="container">
 		<div class="left">
+		<div class="content2">
 			<h1>Mason X</h1>
-			<p>I'm a 14 year old kid who likes to code. <a href="#" data-reveal-id="aboutM">Learn more</a>.</p>
+			<p>I'm a 14 year old kid who likes to be an asshole to people who arent as good as him. I need to go suck a dick. <a href="#" data-reveal-id="aboutM">Learn more</a>.</p>
 			<h3>My projects</h3>
 			<p><a href="https://github.com/ohnx/libDraw">libDraw </a> <span class="tright">A drawing library for BareMetal-OS</span></p>
 			<p><a href="https://github.com/ohnx/easypage">easypage2</a> <span class="tright">A simple CMS</span></p>
                 	<p><a href="https://portfolio.masonx.tk/?project=searchpage2">Search Page 2</a> <span class="tright">A custom home page creator</span></p>
                 	<p><span class="tright"><a href="https://github.com/ohnx">More...</a></span></p><br />
 			<h3>You can contact me at</h3>
+		</div>
 			<p class="contact">
 				<a href="mailto:me@masonx.tk?subject=Hello!"><i class="fa fa-envelope"></i></a>
 				<a href="https://github.com/ohnx" target="tab"><i class="fa fa-github"></i></a>
 			</p>
-		</div>
-		<div class="right">
-			<img src="http://lorempixel.com/output/nature-q-c-800-800-8.jpg"></img>
 		</div>
 	</div> <!-- /container -->
 	<div id="aboutM" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
