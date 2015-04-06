@@ -76,9 +76,19 @@ color:#30FF7F;
 	    font-size: 5em;
 	}
         .contact {
-            font-size: 5em;
+            font-size: 4.5em;
             text-align: center;
         }
+        .close-reveal-modal, .contact {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -webkit-transition: transform .3s ease-out;
+    -moz-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
 	@media (max-width: 480px) {
 		body {
 			overflow:visible;
