@@ -1,0 +1,86 @@
+body {
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    background: #e0f2ff;/* Old browsers */
+    background: -moz-linear-gradient(top, #e0f2ff 0%, #304051 100%);/* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0f2ff), color-stop(100%, #304051));/* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e0f2ff 0%, #304051 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e0f2ff 0%, #304051 100%);/* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e0f2ff 0%, #304051 100%);/* IE10+ */
+    background: linear-gradient(to bottom, #e0f2ff 0%, #304051 100%);/* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e0f2ff', endColorstr='#304051', GradientType=0);/* IE6-9 */
+    /*Fix background issues */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #00C7B0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+a:hover {
+    color: #006075;
+}
+
+.container {
+    margin: 2% auto;
+    max-width: 700px;
+}
+.left {
+    float: left;
+    background-color: #FFFFFF;
+    padding: 20px;
+    -webkit-box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 6px 6px 12px 0px rgba(50, 50, 50, 0.75);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+p {
+    margin: 0;
+    text-align: left;
+    font-size: 1.4em;
+    color: #260000;
+}
+
+.tright {
+    float: right;
+}
+
+.reveal-modal {
+    text-align: center;
+    width: 90vw;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #00AAFF;
+}
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 2.3em;
+}
+
+.contact {
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom styling for smaller screens (phones) */
+@media (max-width: 480px) {
+    body {
+        overflow: visible;
+    }
+}
