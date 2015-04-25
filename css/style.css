@@ -90,7 +90,8 @@ h2 {
 /* Small Width */
 @media (max-width: 500px) {
     .tright {
-        clear:both;
+        clear: both;
+        float: none;
         display: block;
     }
 }
