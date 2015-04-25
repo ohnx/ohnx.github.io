@@ -79,9 +79,18 @@ h2 {
     padding: 0;
 }
 
-/* Custom styling for smaller screens (phones) */
-@media (max-width: 480px) {
+/* Custom styling for smaller screens */
+/* Small height */
+@media (max-height: 600px) {
     body {
         overflow: visible;
+    }
+}
+
+/* Small Width */
+@media (max-width: 500px) {
+    .tright {
+        clear:both;
+        display: block;
     }
 }
