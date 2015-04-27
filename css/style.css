@@ -81,7 +81,7 @@ h2 {
 
 /* Custom styling for smaller screens */
 /* Small height */
-@media (max-height: 600px) {
+@media (max-height: 650px) {
     body {
         overflow: visible;
     }
@@ -93,5 +93,8 @@ h2 {
         clear: both;
         float: none;
         display: block;
+    }
+    body {
+        overflow: visible;
     }
 }
