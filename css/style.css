@@ -28,7 +28,7 @@ a:hover {
 }
 
 .container {
-    margin: 2% auto;
+    margin: 2% auto 0 auto;
     max-width: 700px;
 }
 .left {
