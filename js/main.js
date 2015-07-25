@@ -1,3 +1,6 @@
+Array.prototype.randomElement = function () {
+    return this[Math.floor(Math.random() * this.length)]
+}
 (function(D){
  var
  ce=function(e,n){var a=D.createEvent("CustomEvent");a.initCustomEvent(n,true,true,e.target);e.target.dispatchEvent(a);a=null;return 1},
@@ -148,5 +151,11 @@ function tglFont() {
 	 font=1;
 	}
 }
- document.getElementById("tglfont").addEventListener('click', tglFont);
- document.getElementById("tglfont").addEventListener('touchstart', tglFont);
+document.getElementById("tglfont").addEventListener('click', tglFont);
+document.getElementById("tglfont").addEventListener('touchstart', tglFont);
+var descs = ["Developer, Developer, Developer, Developer.", "Full stack developer", "Technology enthusiast", "Not a robot", "Designer", "Coder", "Not a computer", "Avid reader"]
+function randDesc() {
+ 	document.getElementByID("patiochair").value = descs.randomElemnt();
+}
+randDesc();
+setTimeout(randDesc, 3000);
