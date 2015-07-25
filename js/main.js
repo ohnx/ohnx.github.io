@@ -1,6 +1,7 @@
 Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
-}
+};
+
 (function(D){
  var
  ce=function(e,n){var a=D.createEvent("CustomEvent");a.initCustomEvent(n,true,true,e.target);e.target.dispatchEvent(a);a=null;return 1},
