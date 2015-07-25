@@ -1,5 +1,5 @@
 Array.prototype.randomElement = function () {
-    return this
+    return this[Math.floor(Math.random() * this.length)];
 };
 
 (function(D){
@@ -156,7 +156,7 @@ document.getElementById("tglfont").addEventListener('click', tglFont);
 document.getElementById("tglfont").addEventListener('touchstart', tglFont);
 var descs = ["Developer, Developer, Developer, Developer.", "Full stack developer", "Technology enthusiast", "Not a robot", "Designer", "Coder", "Not a computer", "Avid reader"]
 function randDesc() {
- 	document.getElementById("patiochair").value = descs.randomElement();
+ 	document.getElementById("patiochair").innerHTML = descs.randomElement();
 }
 randDesc();
 setTimeout(randDesc, 3000);
