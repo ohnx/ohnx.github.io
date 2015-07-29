@@ -154,7 +154,7 @@ function tglFont() {
 }
 document.getElementById("tglfont").addEventListener('click', tglFont);
 document.getElementById("tglfont").addEventListener('touchstart', tglFont);
-var descs = ["Developer, Developer, Developer, Developer.", "Full stack developer", "Technology enthusiast", "Not a robot", "Designer", "Coder", "Not a computer", "Avid reader"]
+var descs = ["Developer, Developer, Developer, Developer.", "Full stack developer", "Technology enthusiast", "Not a robot", "Designer", "Coder", "Not a computer", "Wannabe software engineer", "Ocassional educator"]
 function randDesc() {
  	document.getElementById("patiochair").innerHTML = descs.randomElement();
  	setTimeout(randDesc, 10000);
