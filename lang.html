@@ -5,37 +5,101 @@
 </head>
 <body>
 <h1>Languages that Mason can code in</h1>
-<div id="ccircle"><b>C</b></div>
-<div id="phpcircle"><b>PHP/SQL</b></div>
-<div id="cscircle"><b>C#/WPF</b></div><br />
+<div id="ccircle"></div><b>C</b>60%<br />
+<div id="phpcircle"></div><b>PHP/SQL</b>75%<br />
+<div id="cscircle"></div><b>C#/WPF</b>50%<br />
 
-<div id="pycircle"><b>Python</b></div>
-<div id="rktcircle"><b>Racket(Lisp)</b></div>
-<div id="asmcircle"><b>Assembly (64-bit and 16-bit, ring0)</b></div><br />
+<div id="pycircle"></div><b>Python</b>36%<br />
+<div id="rktcircle"></div><b>Racket(Lisp)</b>30%<br />
+<div id="asmcircle"></div><b>Assembly (64-bit and 16-bit, ring0)</b>23%<br />
+
+<div id="vbcircle"></div><b>Visual Basic</b>70%<br />
+<div id="jscircle"></div><b>Javascript Client-side (jQuery, Angular, ...)</b>50%<br />
+<div id="njscircle"></div><b>Javascript Server-side (nodejs)</b>50%<br />
 
 <!-- This document is not jQuery free. -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/9b4a34c0e4669c72d3fefb63fb06b2e53553489f/dist/circle-progress.js"></script>
 <script>
     $('#ccircle').circleProgress({
-        value: 0.75,
-        size: 80,
+        value: 0.60,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
         fill: {
             gradient: ["gray", "lightgray"]
         }
     });
     $('#phpcircle').circleProgress({
         value: 0.75,
-        size: 80,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
         fill: {
             gradient: ["purple", "rebeccapurple"]
         }
     });
     $('#cscircle').circleProgress({
-        value: 0.75,
-        size: 80,
+        value: 0.50,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
         fill: {
             gradient: ["green", "lime"]
+        }
+    });
+    $('#pycircle').circleProgress({
+        value: 0.36,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
+        fill: {
+            gradient: ["DodgerBlue", "deepskyblue"]
+        }
+    });
+    $('#rktcircle').circleProgress({
+        value: 0.30,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
+        fill: {
+            gradient: ["midnightblue", "darkblue"]
+        }
+    });
+    $('#asmcircle').circleProgress({
+        value: 0.23,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
+        fill: {
+            gradient: ["brown", "saddlebrown"]
+        }
+    });
+    $('#vbcircle').circleProgress({
+        value: 0.70,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
+        fill: {
+            gradient: ["rebeccapurple", "purple"]
+        }
+    });
+    $('#jscircle').circleProgress({
+        value: 0.70,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
+        fill: {
+            gradient: ["yellow", "lightyellow"]
+        }
+    });
+    $('#njscircle').circleProgress({
+        value: 0.70,
+        size: 100,
+        startAngle: 0,
+        thickness: 10,
+        fill: {
+            gradient: ["orange", "yellow"]
         }
     });
 </script>
