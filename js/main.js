@@ -154,7 +154,7 @@ function tglFont() {
 }
 document.getElementById("tglfont").addEventListener('click', tglFont);
 document.getElementById("tglfont").addEventListener('touchstart', tglFont);
-var descs = ["\"doesn't know how to javascript\"", "Not a robot", "immature :D", "Coder", "Not a computer", "Idiot with a keyboard", "Java is /totally/ short for Javascript!"]
+var descs = ["."];
 function randDesc() {
  	document.getElementById("patiochair").innerHTML = descs.randomElement();
  	setTimeout(randDesc, 10000);
