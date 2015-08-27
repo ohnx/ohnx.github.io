@@ -161,16 +161,9 @@ section {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-decoration: none;
-    color: gray;
-    transition: 0.5s all ease;
 }
 #contactbar {
     font-size: 2em;
-}
-#contactbar a:hover,
-#contactbar a:active {
-    color: black;
 }
 .aboutme {
     max-width: 1000px;
@@ -189,6 +182,12 @@ th {
 }
 a {
     text-decoration: none;
+    color: gray;
+    transition: 0.5s all ease;
+}
+a:hover,
+a:active {
+    color: black;
 }
 #tglfont {
     bottom: 0;
