@@ -2,46 +2,40 @@
 <html lang="en-US">
 <head>
 <link href='css/fontawesome.css' rel='stylesheet' type='text/css'>
-<link href='css/main.css' rel='stylesheet' type='text/css'>
-<title>ohnx.github.oi</title><!-- not a typo -->
+<link href='css/style.css' rel='stylesheet' type='text/css'>
+<title>ohnx</title>
 </head>
 <body>
-<section name="main" id="mainsec">
-<div class="content">
-<h1>Mason X</h1>
-<h2>ohnx</h2>
-<div id="patiochair">Error-prone</div><br />
-&lt;- About &nbsp; Portfolio-&gt;
-<div id="contactbar"><a href="https://github.com/ohnx">&#xf09b;</a>&nbsp;<a href="mailto:masonx.01@gmail.com">&#xf0e0;</a>
-</div>
-</div>
-</section>
-<section class="leftsec" name="about" id="infosec"> <!-- ha. infosec. -->
-<div class="content">
-<h1>About me</h1>
-<!-- J'aime le fromage! -->
-<div class="aboutme">
-Hi there! My name is Mason.<br />
-I like learning, teaching, coding, technology, tinkering with electronics, art, biking, and debating.<br />
-I also enjoy reading, trying (and failing) to make music, skiing, and swimming.<br />
-Think we might get along well? <a href="mailto:masonx.01@gmail.com">Feel free to swing me an email</a> Ü
-</div>
-</div>
-</section>
-<section class="rightsec" name="portfolio" id="portsec">
-<div class="content">
-<h1>Portfolio</h1>
-Here are some of my more notable projects:
-<div id="repolist"><!-- sorry for carppy HTML - I just copied this from my other site (that was generated using rendered Markdown -- mu) -->
+<div id="card">
+    <section id="cardf">
+        <div class="left">
+            <h1>Mason X</h1>
+            Developer
+        </div>
+        <div class="right">
+            <ul>
+                <li id="github"><a href="https://github.com/ohnx/">ohnx</a></li>
+                <li id="email"><a href="mailto:masonx.01@gmail.com">masonx.01@gmail.com</a></li>
+                <li id="more"><a id="morel" href="javascript:;">About me</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="cardb">
+        <h1>About Me</h1>
+        Hi there! My name is Mason.<br />
+        I like learning, teaching, coding, technology, tinkering with electronics, art, biking, and debating.<br />
+        I also enjoy reading, trying (and failing) to make music, skiing, and swimming.<br />
+        I can write code in many different languages such as C, PHP, Java, Python, Javascript and C#.<br />
+        Here are some of my more notable projects:
+<div id="repolist"><!-- sorry for bad HTML - I just copied this from my other site (that was generated using rendered Markdown -- mu) -->
 <table>
 <thead>
 <tr>
-<th>project name &amp; link</th>
-<th>info</th>
+<th>name</th>
+<th>description</th>
 <th>language</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><a href="https://github.com/ohnx/libDraw">libDraw</a></td>
@@ -50,23 +44,8 @@ Here are some of my more notable projects:
 </tr>
 <tr>
 <td><a href="https://github.com/ohnx/mu">mu</a></td>
-<td>A markdown server that can generate HTML</td>
+<td>A markdown server that can generate HTML pages</td>
 <td>C</td>
-</tr>
-<tr>
-<td><a href="https://github.com/ohnx/EasyDraw">EasyDraw</a></td>
-<td>A demo/simple application using the Microsoft Ink API</td>
-<td>C#</td>
-</tr>
-<tr>
-<td><a href="https://github.com/ohnx/a">a/BareMetal-OS</a></td>
-<td>A fork of BareMetal OS</td>
-<td>Assembly/C</td>
-</tr>
-<tr>
-<td><a href="https://github.com/ohnx/paste">paste</a></td>
-<td>A super-simple pastebin</td>
-<td>Python</td>
 </tr>
 <tr>
 <td><a href="https://github.com/ohnx/athena">athena</a></td>
@@ -96,10 +75,21 @@ Here are some of my more notable projects:
 </tbody>
 </table>
 </div>
+        Interested? Feel free to <a href="mailto:masonx.01@gmail.com">email me</a> to see what I can do for you.<br />
+        <a id="donel" href="javascript:;">Back</a>
+    </section>
 </div>
-</section>
-<div id="tglfont">toggle site font</div>
-<!-- This document is jQuery free! -->
-<script src='js/main.js'></script>
+<script>
+(function() {
+    function swap() {
+        var c = document.getElementById("card");
+        c.classList.contains("flipped") === true ? c.classList.remove("flipped") : c.classList.add("flipped");
+    }
+    document.getElementById("morel").addEventListener("click", function() {swap()});
+    document.getElementById("morel").addEventListener("touchstart", function() {swap()});
+    document.getElementById("donel").addEventListener("click", function() {swap()});
+    document.getElementById("donel").addEventListener("touchstart", function() {swap()});
+})();
+</script>
 </body>
 </html>

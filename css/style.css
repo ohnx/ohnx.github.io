@@ -1,0 +1,138 @@
+/* custom font */
+@font-face {
+    font-family: MasonWritingBad;
+    src: url('../fonts/MasonWritingBad.otf');
+}
+
+/*
+ * basic styling for htm
+ */
+html {
+    font-family: sans-serif;
+    font-size: 125%;
+    overflow: hidden;
+}
+/* remove h margins */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+/* card */
+#card {
+    /* default size */
+    width: 500px;
+    max-width: 500px;
+    height: 250px;
+    /* center card */
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    /* slightly round */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    /* box shadow to make it look 3d-er */
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
+    transition: all 0.4s;
+}
+/* flipped card */
+#card.flipped {
+    /* adjust size for larger about card */
+    top: 50%;
+    width: 100%;
+    max-width: 800px;
+    height: 530px;
+}
+
+/*
+ * common card styling
+ */
+#cardf, #cardb {
+          backface-visibility: hidden;
+          transition: transform 0.7s;
+}
+#card.flipped #cardf{
+          transform: rotateY(-180deg) translateX(-50%) translateY(-50%);
+    width: 0;
+    height: 0;
+}
+#card.flipped #cardb{
+          transform: rotateY(0);
+}
+
+/*
+ * main card styling
+ */
+#cardf {
+    /* padding */
+    padding: 2px;
+    /* flex display so we can align div side by side */
+    display: flex;
+}
+/* left side styling - not much here, just sizing */
+#cardf .left {
+    width: calc(45% - 20px);
+    height: calc(100% - 20px);
+    padding: 20px 0 0 20px;
+    font-size: 150%;
+}
+/* handwritten name */
+#cardf h1 {
+    font-family: MasonWritingBad;
+    font-weight: normal;
+    font-size: 180%;
+}
+/* right size styling */
+#cardf .right {
+    flex-grow: 1;
+    height: calc(100% - 20px);
+    padding: 20px 0 0 0;
+}
+/* Contact list styling */
+#cardf ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#cardf li {
+    margin-bottom: 3px;
+}
+/* remove link stuff */
+#cardf li a, #cardf li a:visited, #cardf li a:active, #cardf li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+/* special id's for each icon */
+#cardf #github:before {
+    content: '\f09b\0a0';
+    font-family: 'FontAwesome';
+    font-size: 150%;
+}
+#cardf #email:before {
+    content: '\f0e0\0a0';
+    font-family: 'FontAwesome';
+    font-size: 150%;
+}
+#cardf #more:before {
+    content: '\f059\0a0';
+    font-family: 'FontAwesome';
+    font-size: 150%;
+}
+
+/*
+ * back card styling
+ */
+#cardb {
+    transform: rotateY(-180deg);
+    padding: 5px;
+}
+#cardb a, #cardb a:visited, #cardb a:active, #cardb a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+
+
