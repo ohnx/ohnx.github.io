@@ -10,7 +10,7 @@
     <section id="cardf">
         <div class="left">
             <h1>Mason X</h1>
-            Developer
+            <div id="descs">Error-prone</div>
         </div>
         <div class="right">
             <ul>
@@ -67,11 +67,6 @@
 <td>My github page</td>
 <td></td>
 </tr>
-<tr>
-<td>More to come!</td>
-<td>I&#39;m always working on new and old projects!</td>
-<td></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -79,17 +74,6 @@
         <a id="donel" href="javascript:;">Back</a>
     </section>
 </div>
-<script>
-(function() {
-    function swap() {
-        var c = document.getElementById("card");
-        c.classList.contains("flipped") === true ? c.classList.remove("flipped") : c.classList.add("flipped");
-    }
-    document.getElementById("morel").addEventListener("click", function() {swap()});
-    document.getElementById("morel").addEventListener("touchstart", function() {swap()});
-    document.getElementById("donel").addEventListener("click", function() {swap()});
-    document.getElementById("donel").addEventListener("touchstart", function() {swap()});
-})();
-</script>
+<script src='js/ecmascript.js'></script>
 </body>
 </html>
