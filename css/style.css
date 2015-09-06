@@ -41,26 +41,25 @@ h1, h2, h3, h4, h5, h6 {
 /* flipped card */
 #card.flipped {
     /* adjust size for larger about card */
-    top: 50%;
+    top: 45%;
     width: 100%;
     max-width: 800px;
-    height: 530px;
+    height: 400px;
 }
 
 /*
  * common card styling
  */
 #cardf, #cardb {
-          backface-visibility: hidden;
-          transition: transform 0.7s;
+    transition: transform 0.7s;
 }
 #card.flipped #cardf{
-          transform: rotateY(-180deg) translateX(-50%) translateY(-50%);
+    display: none;
     width: 0;
     height: 0;
 }
 #card.flipped #cardb{
-          transform: rotateY(0);
+    display: block;
 }
 
 /*
@@ -126,12 +125,69 @@ h1, h2, h3, h4, h5, h6 {
  * back card styling
  */
 #cardb {
-    transform: rotateY(-180deg);
+    display: none;
     padding: 5px;
 }
 #cardb a, #cardb a:visited, #cardb a:active, #cardb a:hover {
     color: gray;
     text-decoration: none;
+}
+table {
+    border: 1px dotted;
+}
+thead {
+    background-color: #C2C2C2;
+}
+/* media styling */
+@media (max-width: 800px) {
+/* flipped card */
+#card.flipped {
+    /* adjust size for larger about card */
+    top: 40%;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+}
+}
+@media (max-width: 500px) {
+/* card */
+#card {
+    left: 0;
+    top: 0;
+    transform: translateX(0) translateY(0);
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+}
+html {
+    overflow: scroll;
+}
+/* flipped card */
+#card.flipped {
+    /* adjust size for larger about card */
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#cardf {
+    /* padding */
+    padding: 2px;
+    /* flex display so we can align div side by side */
+    display: block;
+}
+/* left side styling - not much here, just sizing */
+#cardf .left {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 0 20px;
+    font-size: 150%;
+}
+/* right size styling */
+#cardf .right {
+    display: block;
+    height: 100%;
+    padding: 0;
+}
 }
 
 
