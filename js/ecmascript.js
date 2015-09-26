@@ -4,43 +4,33 @@ Array.prototype.randomElement = function () {
 };
 // descriptions
 var descs = ["Developer", "Coder", "Technology enthusiast", "Designer"];
+var timeout;
 // random descriptions
 function randDesc() {
     document.getElementById("descs").innerHTML = descs.randomElement();
 }
-// swap card function
-function swap() {
-    var c = document.getElementById("card");
-    c.classList.contains("flipped") === true ? c.classList.remove("flipped") : c.classList.add("flipped");
-}
-function loadProj() {
-    var me = new GHuser("ohnx");
-    var callback = function () {
-        var callback_repo = function () {
-            var relem = document.getElementById("projList");
-            var repos = me.list_repos(5, SORT_METHOD.RECENT);
-            for(var i = 0; i < repos.length; i++) {
-                relem.innerHTML += "<tr><td><a href=\"" + repos[i].url + "\">" + repos[i].name.split("/")[1] + "</a></td>\n" +
-                                   "<td>" + repos[i].desc + "</td>" +
-                                   "<td class=\"lang\">" + repos[i].lang + "</td>\n</tr>";
-            }
-        };
-        me.fill_repos(callback_repo);
-        var gelem = document.getElementById("email");
-        gelem.innerHTML = "<a href=\"mailto:" + me.email + "\">" + me.email + "</a>";
+function loadPage() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function (e) { 
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            window.history.pushState("about", "about", "/about.html");
+            clearTimeout(timeout);
+            document.write(xhr.responseText);
+        }
     };
-    me.fill(callback);
+
+    xhr.open("GET", "/about.html", true);
+    xhr.setRequestHeader('Content-type', 'text/html');
+    xhr.send();
 }
 // page finished loading
 (function() {
     // call random description
     randDesc();
-    setInterval(randDesc, 10000);
-    // load latest projects
-    loadProj();
-    // add event listeners for the links
-    document.getElementById("morel").addEventListener("click", function() {swap()});
-    document.getElementById("morel").addEventListener("touchstart", function() {swap()});
-    document.getElementById("donel").addEventListener("click", function() {swap()});
-    document.getElementById("donel").addEventListener("touchstart", function() {swap()});
+    timeout = setInterval(randDesc, 10000);
+    // Javascript probably works on this
+    document.getElementById("morel").removeAttribute("href");
+    document.getElementById("morel").addEventListener("click", function() {loadPage()});
+    document.getElementById("morel").addEventListener("touchstart", function() {loadPage()});
 })();
