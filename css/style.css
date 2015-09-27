@@ -11,7 +11,8 @@ html {
     font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 125%;
     overflow: hidden;
-    background-color: #EEEEEE;
+    /* Background pattern from subtlepatterns.com */
+    background: url('/res/retina_wood_@2X.png');
     margin: 0;
     padding: 0;
 }
@@ -93,6 +94,49 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 150%;
 }
 
+/* card stack effect */
+#card:before {
+    content: "";
+    width: 500px;
+    height: 250px;
+    
+    /* slightly round */
+    border-radius: 2px;
+    /* box shadow to make it look 3d-er */
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
+    background-color: #fff;
+
+    position: absolute;
+    z-index: -1;
+    transform: rotate(2deg);
+}
+#cardf:before {
+    content: "";
+    width: 500px;
+    height: 250px;
+    
+    /* slightly round */
+    border-radius: 2px;
+    /* box shadow to make it look 3d-er */
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
+    background-color: #fff;
+
+    position: absolute;
+    z-index: -2;
+    transform: rotate(-2deg);
+}
+
+#ccup {
+    background: url('/res/coffee.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    z-index: -2;
+}
+
 @media (min-width: 550px) {
 #card {
     /* default size */
@@ -113,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
     overflow: visible;
-    background-color: #fff;
+    background: #fff;
 }
 #cardf {
     /* padding */
@@ -131,6 +175,23 @@ html {
 #cardf .right {
     display: block;
     padding: 0;
+}
+
+#ccup {
+    display: none;
+}
+
+/* card stack effect */
+#card:before {
+    display: none;
+}
+#cardf:before {
+    display: none;
+}
+}
+@media (max-height: 675px) {
+#ccup {
+    display: none;
 }
 }
 @media (max-height: 400px) {
