@@ -7,10 +7,6 @@
 <link href='css/fontawesome.css' rel='stylesheet' type='text/css'>
 <link href='css/style.css' rel='stylesheet' type='text/css'>
 <title>Mason X</title>
-<!--
-This site works with or without javascript.
-Also, it's backwards-compatible to IE 5.5 (as in, you still can see it)
--->
 </head>
 <body>
 <div id="card">
@@ -28,7 +24,32 @@ Also, it's backwards-compatible to IE 5.5 (as in, you still can see it)
         </div>
     </section>
 </div>
+<!--[if lt IE 9 ]>
+<![endif]-->
 <div id="ccup"></div>
+<div id="about" class="modal">
+	<div id="about-modal">
+	    <a href="#" id="about-close" class="modal-close">&#xf00d;</a>
+        <h1>About Me</h1>
+        Hi there! My name is Mason.<br />
+        I like learning, teaching, coding, technology, tinkering with electronics, art, biking, and debating.<br />
+        I also enjoy reading, trying (and failing) to make music, skiing, and swimming.<br />
+        Here are some coding projects that I've recently worked on:<br /><br />
+        <table>
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>description</th>
+                    <th class="lang">language</th>
+                </tr>
+            </thead>
+            <tbody id="projList">
+                
+            </tbody>
+        </table><br />
+        Interested? Feel free to <a href="mailto:masonx.01@gmail.com">contact me via email</a> to request something.
+	</div>
+</div>
 <script src="//cdn.rawgit.com/ohnx/gh-js/872304e3a7674317f1be489785fa63fe1afe2d26/gh.js"></script>
 <script src='js/ecmascript.js'></script>
 </body>

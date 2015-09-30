@@ -1,0 +1,19 @@
+Well (80%+):
+ - C
+ - PHP
+ - Java
+ - JS client-side
+
+OK (50%-80%):
+ - Python
+ - C#
+ - Racket
+ - Assembly Used to know:
+ - Visual Basic
+
+Learning (30%-50%):
+ - Haskell
+ - Swift
+
+Should learn:
+ - C++
