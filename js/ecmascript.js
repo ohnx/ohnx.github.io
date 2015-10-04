@@ -53,7 +53,7 @@ var _0xb8be=["\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72",
         document.getElementById("about").className = "modal";
         document.getElementById("morel").href = "#about";
         modalBox.addEventListener("click", modalExit, false);
-        modalBox.addEventListener("touchend", modalExit, false);
+        modalBox.addEventListener("touchstart", modalExit, false);
         loadProj();
     }
     totallyNormalFunction();
