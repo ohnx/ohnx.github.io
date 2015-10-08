@@ -33,6 +33,7 @@ function loadProj() {
                                    "<td class=\"lang\">" + repos[i].lang + "</td>\n</tr>";
             }
         };
+        document.getElementById("email").innerHTML = "<a href=\""+me.email+"\">"+me.email+"</a>";
         me.fill_repos(callback_repo);
     };
     me.fill(callback);
