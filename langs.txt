@@ -9,13 +9,14 @@ OK (50%-80%):
  - C#
  - Racket
  - Assembly
- 
+ - Swift
+
  Used to know:
  - Visual Basic
 
 Learning (30%-50%):
  - Haskell
- - Swift
 
 Should learn:
  - C++
+
