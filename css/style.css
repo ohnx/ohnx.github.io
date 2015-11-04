@@ -1,294 +1,82 @@
-/* custom font */
-@font-face {
-    font-family: MasonWritingBad;
-    src: url('../fonts/MasonWritingBad.otf');
-}
-
-/*
- * basic styling for htm
- */
 html {
-    font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 125%;
-    overflow: hidden;
-    /* Background pattern from subtlepatterns.com */
-    background: url('/res/retina_wood_@2X.png');
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-.hidden {
-    display: none;
-}
-
-/* remove h margins */
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
-/* card */
-#card {
-    /* center card */
-    margin: 5em auto;
-    /* slightly round */
-    border-radius: 2px;
-    /* box shadow to make it look 3d-er */
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
-    transition: all 0.4s;
-    background-color: #fff;
-}
-
-#cardf {
-    /* padding */
-    padding: 2px;
-    /* flex display so we can align div side by side */
-    display: flex;
-}
-
-/* left side styling - not much here, just sizing */
-#cardf .left {
-    width: calc(45% - 20px);
-    height: calc(100% - 20px);
-    padding: 20px 0 0 20px;
-    font-size: 150%;
-}
-
-/* handwritten name */
-#cardf h1 {
-    font-family: MasonWritingBad;
-    font-weight: normal;
-    font-size: 180%;
-}
-
-/* right size styling */
-#cardf .right {
-    flex-grow: 1;
-    height: calc(100% - 20px);
-    padding: 20px 0 0 0;
-}
-
-/* Contact list styling */
-#cardf ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#cardf li {
-    margin-bottom: 3px;
-}
-/* remove link stuff */
-#cardf li a, #cardf li a:visited, #cardf li a:active, #cardf li a:hover {
-    color: #000;
-    text-decoration: none;
-}
-/* special id's for each icon */
-#cardf #github:before {
-    content: '\f09b\0a0';
-    font-family: 'FontAwesome';
-    font-size: 150%;
-}
-#cardf #email:before {
-    content: '\f0e0\0a0';
-    font-family: 'FontAwesome';
-    font-size: 150%;
-}
-#cardf #more:before {
-    content: '\f059\0a0';
-    font-family: 'FontAwesome';
-    font-size: 150%;
-}
-
-/* card stack effect */
-#card:before {
-    content: "";
-    width: 500px;
-    height: 250px;
-    
-    /* slightly round */
-    border-radius: 2px;
-    /* box shadow to make it look 3d-er */
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
-    background-color: #fff;
-
-    position: absolute;
-    z-index: -1;
-    transform: rotate(2deg);
-}
-#cardf:before {
-    content: "";
-    width: 500px;
-    height: 250px;
-    
-    /* slightly round */
-    border-radius: 2px;
-    /* box shadow to make it look 3d-er */
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.64);
-    background-color: #fff;
-
-    position: absolute;
-    z-index: -2;
-    transform: rotate(-2deg);
-}
-
-/* coffee cup */
-#ccup {
-    background: url('/res/coffee.png');
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 300px;
-    width: 300px;
-    z-index: -2;
-}
-
-/* modal styling */
-.modal {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99998;
-	opacity: 0;
-	transition: opacity 0.5s ease-in;
-	pointer-events: none;
-}
-
-.modal:target {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.modal > div {
-	width: 100%;
-	max-width: 700px;
-	position: relative;
-	margin: 4em auto;
-	padding: 5px 10px 13px 10px;
-	border-radius: 2px;
-	background: #fff;
-}
-
-.modal-close {
-	position: absolute;
-	right: 2px;
-	text-align: center;
-	top: 2px;
-	font-size: 150%;
-	text-decoration: none;
-	color: #000;
-	font-family: 'FontAwesome';
-}
-
-@media (min-width: 550px) {
-#card {
-    /* default size */
-    width: 500px;
-    height: 250px;
-}
-}
-
-@media (max-width: 550px) {
-#card {
-    /* center card */
-    margin: 0;
-    /* slightly round */
-    border-radius: 0;
-    /* box shadow to make it look 3d-er */
-    box-shadow: none;
-}
-
-html {
-    overflow: visible;
-    background: #fff;
-}
-
-#cardf {
-    /* padding */
-    padding: 2px;
-    /* flex display so we can align div side by side */
-    display: block;
-}
-
-/* left side styling - not much here, just sizing */
-#cardf .left {
+    font-family: 'Century Gothic', 'Verdana';
+    height: 100%;
     width: 100%;
-    padding: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4319+10,ffca51+90 */
+    background: #ffca51; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255,67,25,1) 10%, rgba(255,202,81,1) 90%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(10%,rgba(255,67,25,1)), color-stop(90%,rgba(255,202,81,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* IE10+ */
+    background: linear-gradient(135deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4319', endColorstr='#ffca51',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-/* right size styling */
-#cardf .right {
-    display: block;
-    padding: 0;
-}
-
-#ccup {
-    display: none;
-}
-
-/* card stack effect */
-#card:before {
-    display: none;
-}
-
-#cardf:before {
-    display: none;
-}
-}
-
-@media (max-height: 675px) {
-#ccup {
-    display: none;
-}
-.modal > div {
-	margin: 2px auto;
-}
-}
-
-@media (max-height: 500px), (max-width: 550px) {
-/* at this point, we might as well as show the about div. */
-/* modal styling */
-.modal {
-	position: static;
-	background: #fff;
-	z-index: 1;
-	opacity: 0;
-	pointer-events: auto;
-	padding: 0;
-	top: 0;
-}
-
-.modal:target {
-	pointer-events: auto;
-	opacity: 1;
-}
-
-.modal > div {
+.mountains {
+    background: url('/img/mountains.svg') repeat-x bottom;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	left: 0px;
+	top: 15px;
 	width: 100%;
-	position: relative;
-	margin: 5px;
-	padding: 0;
-	background: #fff;
+	height: 100%;
+	z-index: -1;
 }
 
-html {
-    overflow: visible;
-}
-}
-
-@media (max-height: 400px) {
-#card {
-    /* center card */
-    margin: 1em auto;
-}
-html {
-    overflow: visible;
-}
+.main {
+    padding: 5em 0 0 5em;
+    color: #fff;
+    font-size: 2em;
 }
 
+.content {
+    line-height: 1;
+}
 
+h1 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0 0 0.2em 0;
+}
 
+a, a:hover, a:focus, a:active, a:visited {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* different screen size styling */
+@media (max-height: 650px) {
+    .main {
+        padding: 2em 0 0 2em;
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 650px) {
+    .main {
+        padding: 3em 0 0 3em;
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 520px) {
+    .main {
+        padding: 2em 0 0 2em;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-height: 500px) {
+    .main {
+        padding: 0.5em 0 0 0.5em;
+        font-size: 1.3em;
+    }
+}

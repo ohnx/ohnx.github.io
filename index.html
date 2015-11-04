@@ -2,55 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="Mason, a Linux, Windows, Mac OS X, BareMetal OS, and web developer." />
-<link href='css/fontawesome.css' rel='stylesheet' type='text/css'>
 <link href='css/style.css' rel='stylesheet' type='text/css'>
 <title>Mason X</title>
 </head>
 <body>
-<div id="card">
-    <section id="cardf">
-        <div class="left">
-            <h1>Mason X</h1>
-            <div id="descs">Error-prone</div>
-        </div>
-        <div class="right">
-            <ul>
-                <li id="github"><a href="https://github.com/ohnx/">ohnx</a></li>
-                <li id="email"><a href="mailto:masonx.01@gmail.com">masonx.01@gmail.com</a></li>
-                <li id="more"><a id="morel" href="/about.html">About me</a></li>
-            </ul>
-        </div>
-    </section>
+<div class="mountains"></div>
+<div class="main">
+    <h1>Mason X</h1>
+    <div class="content">
+        Hi there.<br />
+        My name is Mason.<br />
+        I create things.<br />
+        <!-- Whether they're worth using is a totally different discussion... -->
+        <a href="mailto:me@masonx.ca">Send me an email</a><br />
+        <a href="https://github.com/ohnx">Check out my GitHub</a>
+    </div>
 </div>
-<!--[if lt IE 9 ]>
-<![endif]-->
-<div id="ccup"></div>
-<div id="about" class="modal">
-	<div id="about-modal">
-	    <a href="#" id="about-close" class="modal-close">&#xf00d;</a>
-        <h1>About Me</h1>
-        Hi! My name is Mason.<br />
-        I'm a developer that enjoys programming in a variety of languages for a variety of platforms such as
-        Linux, Windows, Mac OS X, <a href="https://github.com/ReturnInfinity/BareMetal-OS/">BareMetal OS</a>, and the web.<br />
-        Here are some projects that I've recently worked on:<br />
-        <table>
-            <thead>
-                <tr>
-                    <th>name</th>
-                    <th>description</th>
-                    <th class="lang">language</th>
-                </tr>
-            </thead>
-            <tbody id="projList">
-                
-            </tbody>
-        </table><br />
-	</div>
-</div>
-<script src="//cdn.rawgit.com/ohnx/gh-js/872304e3a7674317f1be489785fa63fe1afe2d26/gh.js"></script>
-<script src='js/ecmascript.js'></script>
+<script>
+//<!--
+function getQueryVariable(variable) {
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+(function() {
+    var language = window.navigator.userLanguage || window.navigator.language;
+    if(language && language.indexOf("fr") > -1 && getQueryVariable("forceen") != "y") {
+        document.location.href = "/index-fr.html";
+    }
+})();
+//-->
+</script>
 </body>
 </html>
