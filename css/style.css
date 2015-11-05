@@ -1,15 +1,15 @@
 html {
-    font-family: 'Century Gothic', 'Verdana';
+    font-family: 'Century Gothic', 'Verdana', sans-serif; /* what kind of system doesn't have these fonts? ... */
     height: 100%;
     width: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4319+10,ffca51+90 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4319+10,ffca51+80 */
     background: #ffca51; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(255,67,25,1) 10%, rgba(255,202,81,1) 90%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(10%,rgba(255,67,25,1)), color-stop(90%,rgba(255,202,81,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* IE10+ */
-    background: linear-gradient(135deg, rgba(255,67,25,1) 10%,rgba(255,202,81,1) 90%); /* W3C */
+    background: -moz-linear-gradient(-45deg,  rgba(255,67,25,1) 10%, rgba(255,202,81,1) 80%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(10%,rgba(255,67,25,1)), color-stop(80%,rgba(255,202,81,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,67,25,1) 10%,rgba(255,202,81,1) 80%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(255,67,25,1) 10%,rgba(255,202,81,1) 80%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(255,67,25,1) 10%,rgba(255,202,81,1) 80%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(255,67,25,1) 10%,rgba(255,202,81,1) 80%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4319', endColorstr='#ffca51',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
