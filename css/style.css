@@ -1,9 +1,9 @@
 html {
-    font-family: 'Century Gothic', 'Verdana', sans-serif; /* what kind of system doesn't have these fonts? ... */
+    font-family: 'Century Gothic', 'Muli', 'Verdana', sans-serif;
     height: 100%;
     width: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4319+10,ffca51+80 */
-    background: #ffca51; /* Old browsers */
+    background: #DB2C04; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  rgba(255,67,25,1) 10%, rgba(255,202,81,1) 80%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right bottom, color-stop(10%,rgba(255,67,25,1)), color-stop(80%,rgba(255,202,81,1))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(-45deg,  rgba(255,67,25,1) 10%,rgba(255,202,81,1) 80%); /* Chrome10+,Safari5.1+ */

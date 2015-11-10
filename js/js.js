@@ -17,6 +17,20 @@ function konamiSetup() {
     }
 }
 
+// google fonts script for mac
+WebFontConfig = {
+    google: { families: [ 'Muli:300:latin' ] }
+};
+
+function setupWebFont() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + 
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+}
 
 function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
@@ -30,10 +44,14 @@ function getQueryVariable(variable) {
 
 (function() {
     var language = window.navigator.userLanguage || window.navigator.language;
-    if(language && language.indexOf("fr") > -1 && getQueryVariable("forceen") != "y") {
+    if(language && language.indexOf("fr") > -1 && document.location.pathname != "/index-fr.html" && getQueryVariable("forceen") != "y") {
         document.location.href = "/index-fr.html";
     }
-    konamiSetup();
+    var fr = (document.location.pathname == "/index-fr.html");
+    if(!fr) konamiSetup();
+    if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+        setupWebFont();
+    }
 })();
 
 /*
