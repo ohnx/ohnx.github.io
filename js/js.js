@@ -19,7 +19,7 @@ function konamiSetup() {
 
 // google fonts script for mac
 WebFontConfig = {
-    google: { families: [ 'Muli:300:latin' ] }
+    google: { families: [ 'Raleway:300:latin' ] }
 };
 
 function setupWebFont() {
