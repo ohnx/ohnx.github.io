@@ -2,6 +2,16 @@ html {
     font-family: 'Century Gothic', 'Raleway', 'Verdana', sans-serif;
     height: 100%;
     width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.sectionMain {
+    position: fixed !important;
+    height: 100%;
+    width: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4319+10,ffca51+80 */
     background: #DB2C04; /* Old browsers */
     background: -moz-linear-gradient(-45deg,  rgba(255,67,25,1) 10%, rgba(255,202,81,1) 80%); /* FF3.6+ */
@@ -17,11 +27,10 @@ html {
     background: url('/img/mountains.svg') repeat-x bottom;
 	margin: 0px;
 	padding: 0px;
-	position: fixed;
 	left: 0px;
-	top: 15px;
+	margin-top: -200px;
 	width: 100%;
-	height: 100%;
+	height: 200px;
 	z-index: -1;
 }
 
@@ -29,6 +38,7 @@ html {
     padding: 5em 0 0 5em;
     color: #fff;
     font-size: 2em;
+    z-index: 1000;
 }
 
 .content {
@@ -41,10 +51,13 @@ h1 {
     margin: 0 0 0.2em 0;
 }
 
+.main a {
+    font-size: 0.6em;
+}
+
 a, a:hover, a:focus, a:active, a:visited {
     color: #f0f0f0;
     text-decoration: none;
-    font-size: 0.6em;
 }
 
 a:hover {
@@ -52,10 +65,27 @@ a:hover {
     text-decoration: underline;
 }
 
+.sectionMore {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 2;
+    color: #fff;
+    background-color: #373535;
+    font-size: 1.6em;
+}
+
+.aboutme {
+    padding: 2em 1em 0 1em;
+}
+
 /* different screen size styling */
 @media (max-height: 650px) {
     .main {
         padding: 2em 0 0 2em;
+        font-size: 1.7em;
+    }
+    .sectionMore {
         font-size: 1.7em;
     }
 }
@@ -65,6 +95,9 @@ a:hover {
         padding: 3em 0 0 3em;
         font-size: 1.7em;
     }
+    .sectionMore {
+        font-size: 1.7em;
+    }
 }
 
 @media (max-width: 520px) {
@@ -72,11 +105,17 @@ a:hover {
         padding: 2em 0 0 2em;
         font-size: 1.3em;
     }
+    .sectionMore {
+        font-size: 1.3em;
+    }
 }
 
 @media (max-height: 500px) {
     .main {
         padding: 0.5em 0 0 0.5em;
+        font-size: 1.3em;
+    }
+    .sectionMore {
         font-size: 1.3em;
     }
 }

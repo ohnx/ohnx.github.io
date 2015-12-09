@@ -42,6 +42,23 @@ function getQueryVariable(variable) {
     return false;
 }
 
+//loading projects
+function loadProj() {
+    var me = new GHuser("ohnx");
+    var callback = function () {
+        var callback_repo = function () {
+            var relem = document.getElementById("projects");
+            var repos = me.list_repos(5, SORT_METHOD.RECENT);
+            for(var i = 0; i < repos.length; i++) {
+                relem.innerHTML += "<li><a href=\"" + repos[i].url + "\">" + repos[i].name.split("/")[1] + "</a> &#8212; " +
+                                   repos[i].desc + "</li>\n";
+            }
+        };
+        me.fill_repos(callback_repo);
+    };
+    me.fill(callback);
+}
+
 (function() {
     var language = window.navigator.userLanguage || window.navigator.language;
     if(language && language.indexOf("fr") > -1 && document.location.pathname != "/index-fr.html" && getQueryVariable("forceen") != "y") {
@@ -49,6 +66,7 @@ function getQueryVariable(variable) {
     }
     var fr = (document.location.pathname == "/index-fr.html");
     if(!fr) konamiSetup();
+    loadProj();
     if (navigator.userAgent.indexOf('Mac OS X') != -1) {
         setupWebFont();
     }
