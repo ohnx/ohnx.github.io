@@ -118,3 +118,9 @@ a:hover {
         font-size: 1.3em;
     }
 }
+
+@media (max-height: 350px) {
+    .sectionMore {
+        margin-top: 50px;
+    }
+}

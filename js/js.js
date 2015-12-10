@@ -44,8 +44,8 @@ function getQueryVariable(variable) {
 
 var currOpacity;
 function fadeEffect() {
-    currOpacity = 1 - ((document.body.scrollTop + 100) / 550);
-    currOpacity = currOpacity < 0 ? 0 : currOpacity;
+    currOpacity = 1 - ((document.body.scrollTop - 100) / 550);
+    currOpacity = currOpacity < 0 ? 0 : (currOpacity > 1 ? 1 : currOpacity);
     document.getElementById("main").style.opacity = currOpacity;
 }
 
