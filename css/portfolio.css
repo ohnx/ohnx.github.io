@@ -1,0 +1,101 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 90%;
+    padding: 3em 1.2em 2em 1.2em;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        width: 100%;
+        padding: 3em 0 2em 0;
+    }
+}
+
+section {
+    padding-bottom: 1.2em;
+}
+
+.textcontainer {
+    font-size: 1.3em;
+}
+
+h1 {
+    margin: 0 0 0.2em 0;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.textcontainer a { color: #fff; }
+
+.tag {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all .2s ease-in-out;
+    line-height: 2.3;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.tag:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.selected {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#projList {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.projItm {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0.5em 0 0.5em 1em;
+    color: #000;
+}
+
+.projItm a { color: #000; }
+
+.projItm h1 {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+.expanded h1 {
+    font-size: 2.2em;
+}
+
+.closer {
+    float: right;
+    font-size: 1.6em;
+    padding-right: 0.5em;
+}
+
+.closer::before {
+    content:'+';
+}
+
+.expanded .closer::before {
+    content:'\2014';
+}
+
+.moreBox {
+    display: none;
+    font-size: 1.2em;
+}
+
+.expanded .moreBox {
+    display: block;
+}

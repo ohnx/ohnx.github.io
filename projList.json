@@ -1,0 +1,21 @@
+[
+{"name":"web-lab", "desc":"A collection of random CSS, Javascript, and HTML experiments.", "link":"https://lab.masonx.ca/", "tags":["html", "css", "javascript"]},
+{"name":"nu", "desc":"[ACTIVE WORK IN PROGRESS] nu is a simple static site generator written in C and intended for fast and easy creation of a blog-style website from markdown files with low setup requirements.", "link":"https://github.com/ohnx/nu", "tags":["c"]},
+{"name":"vocab-quiz", "desc":"A small tool to help people studying for quizzes or tests that require understand of words and their definitions", "link":"https://masonx.ca/vocab-quiz", "tags":["student", "css", "design", "html", "javascript"]},
+{"name":"autoAnswer", "desc":"A Minecraft server plugin that allows configurable automatic answers to common questions players ask", "link":"https://www.spigotmc.org/resources/autoanswer.18804/", "tags":["minecraft", "java"]},
+{"name":"node-cal", "desc":"A simple nodejs calendar module that allows exporting of the iCal format or a custom JSON format.", "link":"https://github.com/ohnx/node-cal", "tags":["nodejs", "javascript"]},
+{"name":"EaaS (Errors as a Service)", "desc":"EaaS is the next revolution of computing. Give your program some of the best error messages from some of the industry's best error-generating programs (such as Windows) in a simple-to-use web API.", "link":"https://github.com/ohnx/EaaS", "tags":["nodejs", "javascript"]},
+{"name":"EasyDraw", "desc":"A small program to allow people to draw images and save/open them.", "link":"https://github.com/ohnx/EasyDraw", "tags":["c#", "wpf", "windows"]},
+{"name":"random", "desc":"A collection of random, semi-useful, scripts written in random languages.", "link":"https://github.com/ohnx/random", "tags":["misc", "ruby", "javascript", "nodejs", "perl", "irc", "php", "bash"]},
+{"name":"gh-js", "desc":"gh-js is a super-simple wrapper for the GitHub API. It can get information on a user, that user's repos, gists, and a bit more.", "link":"https://github.com/ohnx/gh-js", "tags":["javascript", "github"]},
+{"name":"PlayMusic", "desc":"A simple tool to play music. Through the use of <a href='https://github.com/mono/taglib-sharp'>taglib-sharp</a>, PlayMusic also supports reading and writing IDv3 music tags.", "link":"https://github.com/ohnx/PlayMusic", "tags":["c#", "wpf", "windows"]},
+{"name":"PrintScreen", "desc":"A taskbar icon that allows saving the current contents of the screen to a file. PrintScreen was designed for touchscreens/tablets that do not have a keyboard atached, and as a result, cannot press the key combination needed.", "link":"https://github.com/ohnx/PrintScreen", "tags":["c#", "windows"]},
+{"name":"url-short", "desc":"A simple but good-looking url shortner built upon the Flask framework. url-short uses redis for backend storage, and supports lookups for amount of clicks.", "link":"https://github.com/ohnx/url-short", "tags":["python", "flask", "css", "design", "redis"]},
+{"name":"mu", "desc":"A simple web server that supports serving markdown files and parsing them on-the-fly, with basic caching support.", "link":"https://github.com/ohnx/mu", "tags":["c", "network"]},
+{"name":"athena", "desc":"A barely-functional IRC logging bot written in C.", "link":"https://github.com/ohnx/athena", "tags":["c", "network", "irc"]},
+{"name":"random2", "desc":"A collection of random, semi-useful, scripts and programs written in random languages.", "link":"https://github.com/ohnx/random2", "tags":["misc", "c", "bash"]},
+{"name":"paste", "desc":"A simple pastebin written in Python built upon the Flask framework.", "link":"https://github.com/ohnx/paste", "tags":["python", "flask", "redis"]},
+{"name":"libDraw", "desc":"A simple library for BareMetal-OS (written in C) that allows drawing of basic shapes.", "link":"https://github.com/ohnx/libDraw", "tags":["c", "baremetal-os"]},
+{"name":"Backpack", "desc":"A simple Minecraft server plugin that gives players a backpack.", "link":"https://www.spigotmc.org/resources/backpack.8172/", "tags":["minecraft", "java"]},
+{"name":"a", "desc":"A customized version of BareMetal OS", "link":"https://github.com/ReturnInfinity/BareMetal-OS", "tags":["c", "assembly", "baremetal-os"]}
+]

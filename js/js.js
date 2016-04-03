@@ -9,7 +9,7 @@ function konamiSetup() {
                 "The sun is rising,<br />\n" +
                 "Things are being created,<br />\n" +
                 "Mason is coding.<br />\n" +
-                "<a href=\"https://github.com/ohnx\">See what I'm coding</a><br />\n" +
+                "<a href=\"portfolio.html\">See what I've been coding</a><br />\n" +
                 "<a href=\"mailto:me@masonx.ca\">Tell me how much you love my haiku</a>";
                 keys = [];
             }
