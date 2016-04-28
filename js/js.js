@@ -17,16 +17,6 @@ function konamiSetup() {
     }
 }
 
-function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split("&");
-    for (var i=0;i<vars.length;i++) {
-        var pair = vars[i].split("=");
-        if(pair[0] == variable){return pair[1];}
-    }
-    return false;
-}
-
 var currOpacity;
 function fadeEffect() {
     currOpacity = 1 - ((document.body.scrollTop - 100) / 550);
@@ -35,11 +25,6 @@ function fadeEffect() {
 }
 
 (function() {
-    var language = window.navigator.userLanguage || window.navigator.language;
-    if(language && language.indexOf("fr") > -1 && document.location.pathname != "/index-fr.html" && getQueryVariable("forceen") != "y") {
-        document.location.href = "/index-fr.html";
-    }
-
     var fr = (document.location.pathname == "/index-fr.html");
     if(!fr) konamiSetup();
     window.addEventListener("scroll", fadeEffect);

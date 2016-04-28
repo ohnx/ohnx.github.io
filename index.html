@@ -5,8 +5,6 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Mason, creator of cool stuff and things." />
-        <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-        <link href='css/style.css' rel='stylesheet' type='text/css'>
         <title>Mason</title>
     </head>
     <body>
@@ -19,6 +17,7 @@
                     I create things.<br />
                     <!-- Whether they're worth using is a totally different discussion... -->
                     <a href="portfolio.html">Check out my portfolio</a><br />
+                    <div id="spacer"></div>
                     <a href="mailto:me@masonx.ca">Send me an email</a>
                 </div>
             </div>
@@ -39,7 +38,7 @@
                     taking apart electronics (but never putting them back together again since I lost a screw), 
                     writing programs to practice multiplying numbers, or setting up a new wireless router that my family got.
                     As I grew older and understood more of the things I saw around me, I've also expanded my interests into
-                    circuits (most of them involving my Ardiuno or Raspberry Pi) and more programs (ranging from <a href="portfolio.html?tag=html">websites</a> to phone apps to <a href="portfolio.html?tag=baremetal-os">low-level operating system interfaces</a>).
+                    circuits (most of them involving my Ardiuno or Raspberry Pi) and more programs (ranging from websites to phone apps to low-level operating system interfaces).
                 </p>
                 <!--
                 fix grammar issues with this paragraph - it sounds weird
@@ -55,6 +54,30 @@
                 </p>
             </div>
         </div>
+        <script>
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    if(pair[0] == variable){return pair[1];}
+                }
+                return false;
+            }
+            
+            (function() {
+                var head = document.head;
+                head.innerHTML += "<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>\n<link href='css/style.css' rel='stylesheet' type='text/css'>";
+                var language = window.navigator.userLanguage || window.navigator.language;
+                if(language && language.indexOf("fr") > -1 && getQueryVariable("forceen") != "y") {
+                    document.location.href = "/index-fr.html";
+                }
+                var isMobile = window.matchMedia("only screen and (max-width: 500px)").matches || true;
+                if (isMobile) {
+                    document.getElementById("spacer").innerHTML = "<br />";
+                }
+            })();
+        </script>
         <script src="/js/js.js"></script>
     </body>
 </html>
