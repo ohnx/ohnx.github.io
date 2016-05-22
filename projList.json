@@ -18,6 +18,6 @@
 {"name":"libDraw", "desc":"A simple library for BareMetal-OS (written in C) that allows drawing of basic shapes.", "link":"https://github.com/ohnx/libDraw", "tags":["c", "baremetal-os"]},
 {"name":"Backpack", "desc":"A simple Minecraft server plugin that gives players a backpack.", "link":"https://www.spigotmc.org/resources/backpack.8172/", "tags":["minecraft", "java"]},
 {"name":"a", "desc":"A customized version of BareMetal OS", "link":"https://github.com/ReturnInfinity/BareMetal-OS", "tags":["c", "assembly", "baremetal-os"]},
-{"name":"PwrSwitch", "desc":"A simple program that allows for the siwtching of power plans from the taskbar.", "link":"https://github.com/ohnx/PwrSwitch", "tags":["c#", "windows"]},
-{"name":"leek", "desc":"A simple Java game engine", "link":"https://masonx.ca/leek", "tags":["java", "awt"]}
+{"name":"PwrSwitch", "desc":"A simple program that allows for the switching of power plans from the taskbar.", "link":"https://github.com/ohnx/PwrSwitch", "tags":["c#", "windows"]},
+{"name":"leek", "desc":"A simple Java game engine that currently uses AWT.", "link":"https://masonx.ca/leek", "tags":["java", "awt"]}
 ]
