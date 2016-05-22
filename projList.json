@@ -1,7 +1,7 @@
 [
 {"name":"web-lab", "desc":"A collection of random CSS, Javascript, and HTML experiments.", "link":"https://lab.masonx.ca/", "tags":["html", "css", "javascript"]},
 {"name":"nu", "desc":"[ACTIVE WORK IN PROGRESS] nu is a simple static site generator written in C and intended for fast and easy creation of a blog-style website from markdown files with low setup requirements.", "link":"https://github.com/ohnx/nu", "tags":["c"]},
-{"name":"vocab-quiz", "desc":"A small tool to help people studying for quizzes or tests that require understand of words and their definitions", "link":"https://masonx.ca/vocab-quiz", "tags":["student", "css", "design", "html", "javascript"]},
+{"name":"vocab-quiz", "desc":"A small tool to help people studying for quizzes or tests that require understand of words and their definitions", "link":"https://github.com/ohnx/vocab-quiz", "tags":["student", "css", "design", "html", "javascript"]},
 {"name":"autoAnswer", "desc":"A Minecraft server plugin that allows configurable automatic answers to common questions players ask", "link":"https://www.spigotmc.org/resources/autoanswer.18804/", "tags":["minecraft", "java"]},
 {"name":"node-cal", "desc":"A simple nodejs calendar module that allows exporting of the iCal format or a custom JSON format.", "link":"https://github.com/ohnx/node-cal", "tags":["nodejs", "javascript"]},
 {"name":"EaaS (Errors as a Service)", "desc":"EaaS is the next revolution of computing. Give your program some of the best error messages from some of the industry's best error-generating programs (such as Windows) in a simple-to-use web API.", "link":"https://github.com/ohnx/EaaS", "tags":["nodejs", "javascript"]},
@@ -17,5 +17,7 @@
 {"name":"paste", "desc":"A simple pastebin written in Python built upon the Flask framework.", "link":"https://github.com/ohnx/paste", "tags":["python", "flask", "redis"]},
 {"name":"libDraw", "desc":"A simple library for BareMetal-OS (written in C) that allows drawing of basic shapes.", "link":"https://github.com/ohnx/libDraw", "tags":["c", "baremetal-os"]},
 {"name":"Backpack", "desc":"A simple Minecraft server plugin that gives players a backpack.", "link":"https://www.spigotmc.org/resources/backpack.8172/", "tags":["minecraft", "java"]},
-{"name":"a", "desc":"A customized version of BareMetal OS", "link":"https://github.com/ReturnInfinity/BareMetal-OS", "tags":["c", "assembly", "baremetal-os"]}
+{"name":"a", "desc":"A customized version of BareMetal OS", "link":"https://github.com/ReturnInfinity/BareMetal-OS", "tags":["c", "assembly", "baremetal-os"]},
+{"name":"PwrSwitch", "desc":"A simple program that allows for the siwtching of power plans from the taskbar.", "link":"https://github.com/ohnx/PwrSwitch", "tags":["c#", "windows"]},
+{"name":"leek", "desc":"A simple Java game engine", "link":"https://masonx.ca/leek", "tags":["java", "awt"]}
 ]
