@@ -1,12 +1,3 @@
-// Gradients from UIGradients.com
-var gradients = [
-"body {background: #E55D87; /* fallback for old browsers */background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to left, #E55D87 , #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}",
-"body {background: #fc00ff; /* fallback for old browsers */background: -webkit-linear-gradient(to left, #fc00ff , #00dbde); /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to left, #fc00ff , #00dbde); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}",
-"body {background: #134E5E; /* fallback for old browsers */background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}",
-"body {background: #00c6ff; /* fallback for old browsers */background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}",
-"body {background: #ff0084; /* fallback for old browsers */background: -webkit-linear-gradient(to left, #ff0084 , #33001b); /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to left, #ff0084 , #33001b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}"
-];
-
 function isInArray(value, array) {
     return array.indexOf(value) > -1;
 }
@@ -57,7 +48,6 @@ Array.prototype.pushIfNotExist = function(element, comparer) {
 var projects;
 
 (function() {
-    document.getElementById("gradient").innerHTML = gradients[Math.floor(Math.random()*gradients.length)];
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
