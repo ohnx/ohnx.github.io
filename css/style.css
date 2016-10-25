@@ -79,6 +79,7 @@ section {
 p {
     text-align: justify;
     font-size: 0.8em;
+    word-wrap: break-word;
 }
 
 #about p:first-child {
