@@ -1,0 +1,107 @@
+html {
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-color: #424242;
+}
+
+body {
+    margin: 5em auto;
+    margin: 10vh auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 25px 50px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.links {
+    margin: 1em 0 0.5em 0;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s all;
+}
+
+a:hover, a:focus, a:active {
+    color: #000;
+}
+
+.highlight {
+    max-width: 49%;
+    display: inline-block;
+    margin: 0.5em 0;
+}
+
+.highlight-image {
+    width: 100%;
+}
+
+section {
+    max-height: 800px;
+    transition: 0.6s all;
+    overflow: hidden;
+}
+
+.hidden {
+    max-height: 0 !important;
+}
+
+p {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+#about p:first-child {
+    margin-top: 0;
+}
+
+#about p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+body {
+    margin: 0 auto;
+    border-radius: 0;
+    height: 100%;
+}
+}
+
+@media screen and (max-width: 500px) {
+.highlight {
+    max-width: 100%;
+    display: block;
+}
+p {
+    text-align: left;
+}
+}
