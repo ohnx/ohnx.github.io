@@ -80,6 +80,7 @@ p {
     text-align: justify;
     font-size: 0.8em;
     word-wrap: break-word;
+    color: #000;
 }
 
 #about p:first-child {

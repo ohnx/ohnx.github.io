@@ -17,12 +17,20 @@ var h2rgb = function(h) {
     } : null;
 };
 
-(function() {
-    var choices = [["#E52D27", "#B31217"], ["#F45C43", "#EB3349"], ["#D31027", "#EA384D"], ["#734B6D", "#42275A"], ["#4CA1AF", "#2C3E50"], ["#D04ED6", "#834D9B"], ["#A8E063", "#56AB2F"], ["#EECDA3", "#EF629F"], ["#FF9068", "#FD746C"]];
-    var c = choices[Math.floor(Math.random()*choices.length)];
-    var rgb = h2rgb(c[0]);
-    document.getElementById("swaplink").addEventListener("click", swapInfo);
-    document.getElementById("autogen").innerHTML = "a { color: "+c[1]+";}\nhtml {background-image: linear-gradient(135deg, "+c[0]+", "+c[1]+");}\n";
+var setColors = function(a, b) {
+    var rgb = h2rgb(a);
+    document.getElementById("autogen").innerHTML = "a { color: "+b+"; }\nhtml { background-image: linear-gradient(135deg, "+a+", "+b+"); }\n";
     document.getElementById("autogen").innerHTML += "::selection { background-color: rgba("+rgb.r+", "+rgb.g+", "+rgb.b+", 0.2); }";
     document.getElementById("autogen").innerHTML += "::-moz-selection { background-color: rgba("+rgb.r+", "+rgb.g+", "+rgb.b+", 0.2); }";
+};
+
+(function() {
+    // Gradients from http://uigradients.com/
+    var choices = [
+    ["#E52D27", "#B31217"], ["#F45C43", "#EB3349"], ["#D31027", "#EA384D"], ["#734B6D", "#42275A"], ["#4CA1AF", "#2C3E50"],
+    ["#D04ED6", "#834D9B"], ["#A8E063", "#56AB2F"], ["#EECDA3", "#EF629F"], ["#FF9068", "#FD746C"], ["#C9FFBF", "#FFAFBD"],
+    ["#F1F2B5", "#135058"], ["#DC2430", "#7B4397"], ["#267871", "#136A8A"], ["#43CEA2", "#185A9D"], ["#FE8C00", "#F83600"]];
+    var c = choices[Math.floor(Math.random()*choices.length)];
+    document.getElementById("swaplink").addEventListener("click", swapInfo);
+    setColors(c[0], c[1]);
 })();
