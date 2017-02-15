@@ -6,6 +6,7 @@ html {
     width: 100%;
     background-attachment: fixed;
     background-color: #424242;
+    transition: 0.3s all;
 }
 
 body {
@@ -89,6 +90,15 @@ p {
 
 #about p:last-child {
     margin-bottom: 0;
+}
+
+.inverted {
+    background-color: #333;
+    color: #fff;
+}
+
+.inverted h1, .inverted p, .inverted a:hover, .inverted a:focus, .inverted a:active  {
+    color: #fff;
 }
 
 @media screen and (max-width: 600px) {

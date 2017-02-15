@@ -23,6 +23,22 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: #fefefe;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    max-height: 64px;
+  -webkit-scroll-snap-points-y: repeat(100%);
+      -ms-scroll-snap-points-y: repeat(100%);
+          scroll-snap-points-y: repeat(100%);
+  -webkit-scroll-snap-type: mandatory;
+      -ms-scroll-snap-type: mandatory;
+          scroll-snap-type: mandatory;
+  -webkit-scroll-snap-destination: 100% 0%;
+      -ms-scroll-snap-destination: 100% 0%;
+          scroll-snap-destination: 100% 0%;
+}
+
+.modal-inner {
+    text-align: left;
+    max-width: 90%;
+    max-width: calc(100% - 32px);
 }
 
 .modal-active {
@@ -34,7 +50,7 @@
 }
 
 .modal-losing-active {
-    animation-name: slideIn;
+    animation-name: slideOut;
     animation-duration: 0.4s;
 }
 
