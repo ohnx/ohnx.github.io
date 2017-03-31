@@ -1,0 +1,36 @@
+{+ vars.lua +}<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="utf-8">
+    <title>{{ sitename }}</title>
+    <meta name="description" content="{{ sitename }}; {{ sitedesc }}">
+    <meta name="author" content="{{ sitename }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <style id="autogen"></style>
+</head>
+<body>
+    <h1>Mason X</h1>
+    <div id="yqWa">{{ yqWa }}</div>
+    <div class="links">
+        <ul>
+            <li><a href="#" id="swaplink">About</a></li>
+            <li><a href="mailto:me@masonx.ca">Email</a></li>
+            <li><a href="https://github.com/ohnx">GitHub</a></li>
+            <li><a href="https://journal.masonx.ca/">Blog</a></li>
+        </ul>
+    </div>
+    <section id="highlights">
+{% for _,v in ipairs(highlights) do %}
+        <div class="highlight">
+            <a href="{{ v.url }}">{{ v.name }}</a><br />
+            {{v.desc}}
+        </div>{% end %}
+    </section>
+    <section id="about" class="hidden">
+{{ about }}
+    </section>
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
