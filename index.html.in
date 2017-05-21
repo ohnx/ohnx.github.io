@@ -15,14 +15,11 @@
     <div id="yqWa">{{ yqWa }}</div>
     <div class="links">
         <ul>
-            <li><a href="#" id="swaplink">About</a></li>
-            <li><a href="mailto:me@masonx.ca">Email</a></li>
-            <li><a href="https://github.com/ohnx">GitHub</a></li>
-            <li><a href="https://journal.masonx.ca/">Blog</a></li>
+            <li><a href="#" id="swaplink">About</a></li>{% for _,v in ipairs(links) do %}
+            <li><a href="{{ v.url }}">{{ v.name }}</a></li>{% end %}
         </ul>
     </div>
-    <section id="highlights">
-{% for _,v in ipairs(highlights) do %}
+    <section id="highlights">{% for _,v in ipairs(highlights) do %}
         <div class="highlight">
             <a href="{{ v.url }}">{{ v.name }}</a><br />
             {{v.desc}}
