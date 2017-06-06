@@ -23,7 +23,7 @@ var listeners = function() {
 
 // set up new DOM elements
 (function() {
-    document.getElementById("yqWa").innerHTML = "Developer<br />Color Test Mode (stuff may break)";
+    document.getElementById("yqWa").innerHTML = "&iexcl;Desarrollador!";
     
     // SPQR
     var s = document.createElement("link");

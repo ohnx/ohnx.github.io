@@ -14,6 +14,10 @@ links = {
         name = "GitHub"
     },
     {
+        url = "https://git.masonx.ca/",
+        name = "Gogs"
+    },
+    {
         url = "https://journal.masonx.ca",
         name = "Blog"
     },
@@ -47,11 +51,9 @@ about = [[
             Hi there. My name is Mason.
         </p>
         <p>
-            I enjoy low-level programming, learning new things, and nature.
+            I like learning about low-level programming and science.
         </p>
-        <p>
-            Currently, I program a lot of random stuff in C, some of which can
-            be seen on my GitHub page.
-        </p>
+        <!-- I am also a rampant procrastinator and work on computer stuff when I
+        really should be studying for my french exam :/ -->
 ]]
 %}
