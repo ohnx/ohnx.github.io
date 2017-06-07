@@ -23,7 +23,7 @@ var listeners = function() {
 
 // set up new DOM elements
 (function() {
-    document.getElementById("yqWa").innerHTML = "&iexcl;Desarrollador!";
+    document.getElementById("yqWa").innerHTML = "&iexcl;Programador!";
     
     // SPQR
     var s = document.createElement("link");
