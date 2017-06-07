@@ -1,3 +1,3 @@
 #!/bin/bash
-./goatee -i index.html.in index.html
+./gt -i index.html.in index.html
 
