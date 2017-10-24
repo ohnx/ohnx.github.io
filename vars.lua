@@ -14,10 +14,6 @@ links = {
         name = "GitHub"
     },
     {
-        url = "https://git.masonx.ca/",
-        name = "Gogs"
-    },
-    {
         url = "https://journal.masonx.ca",
         name = "Blog"
     },
@@ -25,14 +21,14 @@ links = {
 
 highlights = {
     {
-        url = "https://git.masonx.ca/ohnx/Lindy",
-        name = "Lindy",
-        desc = "Experimental DNS server",
-    },
-    {
         url = "https://github.com/ohnx/nyan-load",
         name = "nyan-load",
         desc = "Experimenting with EFI bootloaders",
+    },
+    {
+        url = "https://github.com/ohnxmath/sammy",
+        name = "sammy",
+        desc = "Simple Big Integer library",
     },
     {
         url = "https://github.com/ohnx/PrintScreen",
@@ -40,20 +36,18 @@ highlights = {
         desc = "Quickly screenshot in Windows",
     },
     {
-        url = "https://github.com/ohnx/goatee",
-        name = "goatee",
-        desc = "Lua-backed templating engine",
+        url = "https://github.com/ohnx/mail",
+        name = "mail",
+        desc = "POSIX-style SMTP mail server",
     },
 }
 
 about = [[
         <p>
-            Hi there. My name is Mason.
+            Hi there! My name is Mason.
         </p>
         <p>
-            I like learning about low-level programming and science.
+            I like learning about low-level programming, math, and science.
         </p>
-        <!-- I am also a rampant procrastinator and work on computer stuff when I
-        really should be studying for my french exam :/ -->
 ]]
 %}
