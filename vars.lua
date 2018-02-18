@@ -1,7 +1,7 @@
 {%
-yqWa = "Developer"
+yqWa = "Developer!"
 
-sitename = "Mason X"
+sitename = "Mason"
 sitedesc = "creator of stuff and things"
 
 links = {
@@ -13,10 +13,6 @@ links = {
         url = "https://github.com/ohnx",
         name = "GitHub"
     },
-    {
-        url = "https://journal.masonx.ca",
-        name = "Blog"
-    },
 }
 
 highlights = {
@@ -26,9 +22,9 @@ highlights = {
         desc = "Experimenting with EFI bootloaders",
     },
     {
-        url = "https://github.com/ohnxmath/sammy",
-        name = "sammy",
-        desc = "Simple Big Integer library",
+        url = "https://github.com/ohnxmath/leo",
+        name = "leo",
+        desc = "Simple equation parser and calculator",
     },
     {
         url = "https://github.com/ohnx/PrintScreen",
@@ -47,7 +43,15 @@ about = [[
             Hi there! My name is Mason.
         </p>
         <p>
-            I like learning about low-level programming, math, and science.
+            I like learning about science and technology. Lots of things have
+            piqued my interest in the past few years, including molecular biology,
+            modern physics, electrochemistry, and FPGA's.
+        </p>
+        <p>
+            I also enjoy mucking around with computer hardware (servers) and networks (the internet).
+        </p>
+        <p>
+            There's always more to learn!
         </p>
 ]]
 %}

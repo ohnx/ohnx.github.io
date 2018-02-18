@@ -1,8 +1,8 @@
 // Gradients from http://uigradients.com/
 var choices = [
-    ["#EDDE5D", "#F09819"], ["#F45C43", "#EB3349"], ["#D31027", "#EA384D"], ["#734B6D", "#42275A"], ["#4CA1AF", "#2C3E50"],
-    ["#D04ED6", "#834D9B"], ["#A8E063", "#56AB2F"], ["#EECDA3", "#EF629F"], ["#FF9068", "#FD746C"], ["#C9FFBF", "#FFAFBD"],
-    ["#F1F2B5", "#135058"], ["#DC2430", "#7B4397"], ["#267871", "#136A8A"], ["#43CEA2", "#185A9D"], ["#FE8C00", "#F83600"]];
+    ["#EDDE5D", "#F09819"], ["#F45C43", "#EB3349"], ["#D31027", "#EA384D"], ["#4CA1AF", "#2C3E50"],
+    ["#A8E063", "#56AB2F"], ["#EECDA3", "#EF629F"], ["#FF9068", "#FD746C"], ["#C9FFBF", "#FFAFBD"],
+    ["#DC2430", "#7B4397"], ["#267871", "#136A8A"], ["#43CEA2", "#185A9D"], ["#FE8C00", "#F83600"]];
 
 var randomColors = function() {
     var c = choices[Math.floor(Math.random()*choices.length)];
@@ -53,13 +53,21 @@ var addCpick = function() {
     document.body.appendChild(s);
 };
 
+var partyTime = function() {
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "js/party.js";
+    document.body.appendChild(s);
+};
+
 var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
 
 var konamiListener = function(e) {
     kkeys.push(e.keyCode);
     if (kkeys.toString().indexOf(konami) >= 0 ) {
         document.removeEventListener('keydown', konamiListener);
-        addCpick();
+        document.getElementById("yqWa").innerHTML = "&iexcl;Programador!";
+        partyTime();
     }
 };
 

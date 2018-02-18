@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>{{ sitename }}</title>
-    <meta name="description" content="{{ sitename }}; {{ sitedesc }}">
-    <meta name="author" content="{{ sitename }}">
+    <meta name="description" content="{{ sitename }}, {{ sitedesc }}">
+    <meta name="author" content="Mason">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
     <style id="autogen"></style>
 </head>
 <body>
-    <h1>Mason X</h1>
+    <h1>{{ sitename }}</h1>
     <div id="yqWa">{{ yqWa }}</div>
     <div class="links">
         <ul>
