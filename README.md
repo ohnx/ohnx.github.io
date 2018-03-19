@@ -1,2 +1,3 @@
-# ohnx.github.io
-It's my website.
+# [masonx.ca](https://masonx.ca/)
+
+It's my website!
