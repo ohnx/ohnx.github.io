@@ -4,17 +4,6 @@ yqWa = "Developer!"
 sitename = "Mason"
 sitedesc = "creator of stuff and things"
 
-links = {
-    {
-        url = "mailto:me@masonx.ca",
-        name = "Email"
-    },
-    {
-        url = "https://github.com/ohnx",
-        name = "GitHub"
-    },
-}
-
 highlights = {
     {
         url = "https://github.com/ohnx/nyan-load",
@@ -42,5 +31,17 @@ about = [[
         <p>
             Hi there! My name is Mason.
         </p>
+]]
+
+contact = [[
+        <p>
+            I'm on the internet a lot.
+        </p>
+        <ul>
+        <li>GitHub</li>
+        <li>Twitter</li>
+        <li>IRC</li>
+        <li>GitHub</li>
+        </ul>
 ]]
 %}
