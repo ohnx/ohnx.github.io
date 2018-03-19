@@ -42,16 +42,5 @@ about = [[
         <p>
             Hi there! My name is Mason.
         </p>
-        <p>
-            I like learning about science and technology. Lots of things have
-            piqued my interest in the past few years, including molecular biology,
-            modern physics, electrochemistry, and FPGA's.
-        </p>
-        <p>
-            I also enjoy mucking around with computer hardware (servers) and networks (the internet).
-        </p>
-        <p>
-            There's always more to learn!
-        </p>
 ]]
 %}

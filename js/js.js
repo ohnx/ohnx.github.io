@@ -1,7 +1,7 @@
 // Gradients from http://uigradients.com/
 var choices = [
     ["#EDDE5D", "#F09819"], ["#F45C43", "#EB3349"], ["#D31027", "#EA384D"], ["#4CA1AF", "#2C3E50"],
-    ["#A8E063", "#56AB2F"], ["#EECDA3", "#EF629F"], ["#FF9068", "#FD746C"], ["#C9FFBF", "#FFAFBD"],
+    ["#A8E063", "#56AB2F"], ["#EECDA3", "#EF629F"], ["#FF9068", "#FD746C"], ["#B993D6", "#8CA6DB"],
     ["#DC2430", "#7B4397"], ["#267871", "#136A8A"], ["#43CEA2", "#185A9D"], ["#FE8C00", "#F83600"]];
 
 var randomColors = function() {
@@ -67,7 +67,7 @@ var konamiListener = function(e) {
     if (kkeys.toString().indexOf(konami) >= 0 ) {
         document.removeEventListener('keydown', konamiListener);
         document.getElementById("yqWa").innerHTML = "&iexcl;Programador!";
-        partyTime();
+        addCpick();
     }
 };
 
