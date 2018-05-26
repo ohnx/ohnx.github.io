@@ -1,78 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" id="html">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mason's home on the World Wide Web">
+    <title>Mason</title>
+    <meta name="description" content="Mason, creator of stuff and things">
     <meta name="author" content="Mason">
-    <title>Mason's home on the Internet</title>
-    <style>body{margin:40px auto;max-width:700px;line-height:1.6;font-size:18px;padding:0 10px;font-family:'Georgia'}h1,h2,h3{line-height:1.2}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <style id="autogen"></style>
 </head>
 <body>
-    <header>
-        <div style="float: right; text-align: right;">
-            <img src="https://avatars3.githubusercontent.com/u/6683648" style="max-width: 300px; width: 50%;" alt="ohnx" /><br />
-            <!--<i>My profile picture</i>-->
-        </div>
-        <div style="float: left;">
-            <h1>Mason</h1>
-            E-mail: <a href="mailto:me@masonx.ca">me@masonx.ca</a><br />
-            IRC: ohnx on Freenode<br />
-            GitHub: <a href="https://github.com/ohnx">ohnx</a><br />
-        </div>
-        <div style="clear:both;"></div>
-        <div>
-            <p>Hi! My name is Mason. I'm an aspiring electrical engineer.</p>
-            <p>Welcome to my home on the World Wide Web!</p>
-        </div>
-    </header>
-    <hr />
-    <div>
-        <h2>About me</h2>
-        <p>
-            I like to tinker with computers, electronics and code.
-        </p>
-        <p>
-            One day I hope to design and research chips that help solve problems in computational biology and/or machine learning.
-            For now, though, I'm still working my way through my studies in high school.
-        </p>
-        <p>I entertain the idea that I'm not a complete nerd by skiing (when there's snow on the ground) and running (when there isn't).</p>
-    </div>
-<!-- TODO: get published! ^.^
-    <div>
-        <h2>Publications</h2>
+    <h1>Mason</h1>
+    <div id="yqWa">Developer!</div>
+    <div class="links">
         <ul>
-            <li></li>
+            <li><a href="#" id="swaplink">About</a></li>
+            <li><a href="mailto:me@masonx.ca">Email</a></li>
+            <li><a href="https://github.com/ohnx">GitHub</a></li>
         </ul>
     </div>
+    <section id="highlights">
+        <div class="highlight">
+            <a href="https://github.com/ohnx/nyan-load">nyan-load</a><br />
+            Experimenting with EFI bootloaders
+        </div>
+        <div class="highlight">
+            <a href="https://github.com/ohnxmath/leo">leo</a><br />
+            Simple equation parser and calculator
+        </div>
+        <div class="highlight">
+            <a href="https://github.com/ohnx/PrintScreen">PrintScreen</a><br />
+            Quickly screenshot in Windows
+        </div>
+        <div class="highlight">
+            <a href="https://github.com/ohnx/mail">mail</a><br />
+            POSIX-style SMTP mail server
+        </div>
+    </section>
+    <section id="about" class="hidden">
+        <p>
+            Hi there! My name is Mason.
+        </p>
+        <p>
+            I like learning about science and technology. Lots of things have
+            piqued my interest in the past few years, including molecular biology,
+            modern physics, electrochemistry, and FPGA's.
+        </p>
+        <p>
+            I also enjoy mucking around with computer hardware (servers) and networks (the internet).
+        </p>
+        <p>
+            There's always more to learn!
+        </p>
 
--->
-    <div>
-        <h2>Current projects</h2>
-        <ul>
-            <li><a href="https://github.com/ohnx/mail">mail</a>, a mail server for POSIX systems</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Past projects</h2>
-        <ul>
-            <li><a href="https://github.com/ohnx/minervabot">minervabot</a>, a basic modular IRC bot</li>
-            <li><a href="https://github.com/ohnxmath/leo">leo</a>, a simple infix equation parser and calculator</li>
-            <li><a href="https://github.com/ohnx/nyan-load">nyan-load</a>, an experiment with EFI bootloaders</li>
-            <li><a href="https://github.com/ohnx/lindy">Lindy</a>, a simple DNS server</li>
-            <li><a href="https://github.com/ohnx/JIRCC">JIRCC</a>, a minimal IRC client</li>
-            <li><a href="https://github.com/ohnx/goatee">goatee</a>, an extensible templating engine</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Education</h2>
-        <ul>
-            <li>Currently completing the <a href="http://www.ibo.org/programmes/diploma-programme/">IB Diploma Programme</a></li>
-        </ul>
-    </div>
-    <hr />
-    <footer>
-        <p>Last updated on March 18, 2018. All listings are in reverse chronological order.</p>
-    </footer>
+    </section>
+    <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
