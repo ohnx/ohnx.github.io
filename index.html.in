@@ -15,21 +15,18 @@
     <div id="yqWa">{{ yqWa }}</div>
     <div class="links">
         <ul>
-            <li><a href="#" class="swaplink" data-v="about">About</a></li>
-            <li><a href="#" class="swaplink" data-v="contact">Contact</a></li>
+            <li><a href="#" id="swaplink">About</a></li>{% for _,v in ipairs(links) do %}
+            <li><a href="{{ v.url }}">{{ v.name }}</a></li>{% end %}
         </ul>
     </div>
-    <section id="highlights" class="swappage">{% for _,v in ipairs(highlights) do %}
+    <section id="highlights">{% for _,v in ipairs(highlights) do %}
         <div class="highlight">
             <a href="{{ v.url }}">{{ v.name }}</a><br />
             {{v.desc}}
         </div>{% end %}
     </section>
-    <section id="about" class="hidden swappage">
+    <section id="about" class="hidden">
 {{ about }}
-    </section>
-    <section id="contact" class="hidden swappage">
-{{ contact }}
     </section>
     <script type="text/javascript" src="js/js.js"></script>
 </body>
