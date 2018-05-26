@@ -1,0 +1,33 @@
+{+ vars.lua +}<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="utf-8">
+    <title>{{ sitename }}</title>
+    <meta name="description" content="{{ sitename }}, {{ sitedesc }}">
+    <meta name="author" content="Mason">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <style id="autogen"></style>
+</head>
+<body>
+    <h1>{{ sitename }}</h1>
+    <div id="yqWa">{{ yqWa }}</div>
+    <div class="links">
+        <ul>
+            <li><a href="#" id="swaplink">About</a></li>{% for _,v in ipairs(links) do %}
+            <li><a href="{{ v.url }}">{{ v.name }}</a></li>{% end %}
+        </ul>
+    </div>
+    <section id="highlights">{% for _,v in ipairs(highlights) do %}
+        <div class="highlight">
+            <a href="{{ v.url }}">{{ v.name }}</a><br />
+            {{v.desc}}
+        </div>{% end %}
+    </section>
+    <section id="about" class="hidden">
+{{ about }}
+    </section>
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
