@@ -19,7 +19,7 @@ highlights = {
     {
         url = "https://github.com/ohnx/nyan-load",
         name = "nyan-load",
-        desc = "Experimenting with EFI bootloaders",
+        desc = "Experiment with EFI bootloaders",
     },
     {
         url = "https://github.com/ohnxmath/leo",
@@ -41,6 +41,14 @@ highlights = {
 about = [[
         <p>
             Hi there! My name is Mason.
+            I like to tinker with computers, electronics and code.
+        </p>
+        <p>
+            One day, I hope to design and research chips that help solve problems in computational biology and/or machine learning.
+            For now, though, I'm still working my way through my studies in high school.
+        </p>
+        <p>
+            I entertain the idea that I'm not a complete nerd by skiing (when there's snow on the ground) and running (when there isn't).
         </p>
 ]]
 %}
