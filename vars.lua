@@ -1,5 +1,5 @@
 {%
-yqWa = "Developer!"
+yqWa = "Developer"
 
 sitename = "Mason"
 sitedesc = "creator of stuff and things"
@@ -17,24 +17,24 @@ links = {
 
 highlights = {
     {
-        url = "https://github.com/ohnx/nyan-load",
-        name = "nyan-load",
-        desc = "Experiment with EFI bootloaders",
-    },
-    {
         url = "https://github.com/ohnxmath/leo",
         name = "leo",
-        desc = "Simple equation parser and calculator",
+        desc = "Expression parser and calculator library",
     },
     {
-        url = "https://github.com/ohnx/PrintScreen",
-        name = "PrintScreen",
-        desc = "Quickly screenshot in Windows",
+        url = "https://github.com/ohnx/minervabot",
+        name = "minervabot",
+        desc = "Modular, multi-threaded, IRC bot",
+    },
+    {
+        url = "https://github.com/ohnx/cnum",
+        name = "cnum",
+        desc = "Perceptron network for digit recognition",
     },
     {
         url = "https://github.com/ohnx/mail",
         name = "mail",
-        desc = "POSIX-style SMTP mail server",
+        desc = "Simple SMTP mail server",
     },
 }
 
