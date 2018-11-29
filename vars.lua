@@ -32,8 +32,8 @@ highlights = {
         desc = "Perceptron network for digit recognition",
     },
     {
-        url = "https://github.com/ohnx/mail",
-        name = "mail",
+        url = "https://github.com/ohnx/barid",
+        name = "barid",
         desc = "Simple SMTP mail server",
     },
 }
