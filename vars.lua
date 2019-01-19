@@ -41,7 +41,7 @@ highlights = {
 about = [[
         <p>
             Hi there! My name is Mason.
-            I like to tinker with computers, electronics and code.
+            I like to tinker with computers, electronics, and code.
         </p>
         <p>
             One day, I hope to design and research chips that help solve problems in computational biology and/or machine learning.
