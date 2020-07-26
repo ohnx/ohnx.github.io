@@ -1,7 +1,7 @@
 html {
     font-size: 1.5em;
     font-family: 'Quicksand', sans-serif;
-    color: #333;
+    color: #222;
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -93,7 +93,7 @@ p {
 }
 
 .inverted {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
 }
 
@@ -106,12 +106,21 @@ p {
     bottom: 0.5em;
     right: 0.5em;
     z-index: 15;
-    transition: .3s all;
+    transition: 0.3s all;
     cursor: pointer;
+    fill: #fff;
+}
+
+.inverted #cpick {
+    fill: #222;
 }
 
 .cpick-active {
-    filter: invert(100%);
+    fill: #222 !important;
+}
+
+.inverted .cpick-active {
+    fill: #fff !important;
 }
 
 /* The Modal (background) */
@@ -124,15 +133,21 @@ p {
     right: 0;
     width: 100%; /* Full width */
     overflow: auto; /* Enable scroll if needed */
-    background-color: #fefefe;
+    background-color: #fff;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
     max-height: 64px;
+    transition: 0.3s all;
+}
+
+.inverted .modal {
+    background-color: #222;
+    box-shadow: 0px 0px 5px 1px rgba(255,255,255,0.3);
 }
 
 .modal-inner {
     text-align: left;
     max-width: 90%;
-    max-width: calc(100% - 32px);
+    max-width: calc(100% - 48px);
 }
 
 .modal-active {
@@ -164,8 +179,6 @@ p {
     height: 48px;
     display: inline-block;
     margin: 0.2em;
-    border: 1px solid #eee;
-    box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
     scroll-snap-align: start;

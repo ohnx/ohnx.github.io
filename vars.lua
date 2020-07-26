@@ -41,7 +41,18 @@ highlights = {
 about = [[
         <p>
             Hi there! My name is Mason.
-            I am currently a first-year student majoring in Electrical and Computer Engineering.
+            I'm a currently a student majoring in Electrical and Computer Engineering.
+        </p>
+        <p>
+            My primary interest is in low-level programming, but I have dipped
+            my toes into some physics and computational biology before, too.
+
+            On the side, I also enjoy running, skiing, and building stuff with
+            power tools.
+        </p>
+        <p>
+            Want to chat about something? Feel free to get in touch using my
+            email above!
         </p>
 ]]
 %}
