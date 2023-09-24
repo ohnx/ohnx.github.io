@@ -41,16 +41,13 @@ highlights = {
 about = [[
         <p>
             Hi there! My name is Mason.
-            I'm currently a student pursing a Bachelor's degree in Electrical
-            and Computer Engineering.
+            I am currently a tech worker based in New York City.
         </p>
         <p>
-            My primary interest is in low-level (systems) programming, but I
-            have dipped my toes into some physics and computational biology
-            before, too.
-
-            On the side, I also enjoy running, skiing, and building stuff with
-            power tools.
+            My job title is Linux Engineer, which means I get to think about
+            ways to maintain and improve the reliability of computer systems.
+            Outside of work, I enjoy coding for personal projects,
+            theatre, cycling, reading, skiing, trivia, and exploring the city.
         </p>
         <p>
             Want to chat about something? Feel free to get in touch using my

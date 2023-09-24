@@ -107,6 +107,12 @@ var konamiListener = function(e) {
     document.getElementById("swaplink").addEventListener("click", swapInfo);
     document.addEventListener('keydown', konamiListener);
 
+    // // hype for moon!
+    // setColors('#FFF', '#97E4FF');//#0064bd');
+    // var starfield = new Starfield();
+    // starfield.initialise(document.getElementById('stars'));
+    // starfield.start();
+
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://raw.githubusercontent.com/ghosh/uiGradients/aaa6c943a796c5f16e6daf70f8856c4e45cc8e6c/gradients.json", true); // true for asynchronous request
     xmlHttp.onload = function (e) {

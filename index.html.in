@@ -37,6 +37,7 @@
     <section id="about" class="hidden">
 {{ about }}
     </section>
+    <!--<script type="text/javascript" src="https://rawcdn.githack.com/dwmkerr/starfield/6a4e6674977b9705553752238fc30755b8a5b5b2/starfield.js"></script>-->
     <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
