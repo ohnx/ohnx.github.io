@@ -77,6 +77,10 @@ section {
     max-height: 0 !important;
 }
 
+footer {
+    margin-top: 0.5em;
+}
+
 p {
     text-align: justify;
     font-size: 0.8em;

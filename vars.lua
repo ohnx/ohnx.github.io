@@ -15,6 +15,13 @@ links = {
     },
 }
 
+webring = {
+  prev = "https://cmuwebr.ing/masonx/prev",
+  home = "https://cmuwebr.ing/",
+  name = "the CMU Webring",
+  next = "https://cmuwebr.ing/masonx/next"
+}
+
 highlights = {
     {
         url = "https://github.com/ohnxmath/leo",
