@@ -16,10 +16,10 @@ links = {
 }
 
 webring = {
-  prev = "https://cmuwebr.ing/masonx/prev",
+  prev = "https://cmuwebr.ing/sites/mmx/prev",
   home = "https://cmuwebr.ing/",
   name = "the CMU Webring",
-  next = "https://cmuwebr.ing/masonx/next"
+  next = "https://cmuwebr.ing/sites/mmx/next"
 }
 
 highlights = {
