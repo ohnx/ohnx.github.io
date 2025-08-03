@@ -6,7 +6,7 @@ sitedesc = "creator of stuff and things"
 
 links = {
     {
-        url = "mailto:me@masonx.ca",
+        url = "mailto:hi@masonx.ca",
         name = "Email"
     },
     {
@@ -40,18 +40,21 @@ highlights = {
 
 about = [[
         <p>
-            Hi there! My name is Mason.
-            I am currently a tech worker based in New York City.
+            Hi there! My name is Mason. I am currently employed as a Linux
+            Engineer in New York City, spending most of my daylight hours
+            thinking about ways to improve the reliability and performance of
+            various computer systems. Outside of work, I enjoy exploring parts
+            of the city, cycling, reading, and occasionally coding for personal
+            projects.
         </p>
         <p>
-            My job title is Linux Engineer, which means I get to think about
-            ways to maintain and improve the reliability of computer systems.
-            Outside of work, I enjoy coding for personal projects,
-            theatre, cycling, reading, skiing, trivia, and exploring the city.
+            I previously studied circuit design and computer architecture in
+            college, and although I am less engaged compared to before, I do my
+            best to still keep up to date with some of the latest developments.
         </p>
         <p>
             Want to chat about something? Feel free to get in touch using my
-            email above!
+            email above! 
         </p>
 ]]
 %}
