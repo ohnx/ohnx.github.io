@@ -10,6 +10,10 @@ links = {
         name = "Email"
     },
     {
+        url = "https://blog.masonx.ca/",
+        name = "Blog"
+    },
+    {
         url = "https://github.com/ohnx",
         name = "GitHub"
     },
